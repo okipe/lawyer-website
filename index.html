@@ -7,25 +7,25 @@
     <meta name="description" content="Servicios legales de calidad con Justiciero Abogados & Asociados">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
 </head>
+
 <body>
     <!-- HEADER -->
-    <header id="inicio">
-        <a href="#inicio"><img src="img/logo-abogado.webp" alt="Justiciero Abogados y Asociados" class="header-logo"></a>
+    <header class="header" id="inicio">
+        <a href="#inicio" class="header__logo"><img src="img/logo-abogado.webp" alt="Justiciero Abogados y Asociados" class="header-logo"></a>
         <!-- This allow to OPEN the Mobile Menu-->
-        <button class="header__open-button--mobile" id="open"><i class="bi bi-list"></i></button>
+        <button class="header__btn header__button--open-mobile" id="open"><i class="bi bi-list"></i></button>
         <!-- The visible class make navbar visible-->
         <nav class="navbar" id="navbar"> 
             <!--It allow to CLOSE the mobile menu-->
-            <button class="navbar__close-button--mobile" id="close"><i class="bi bi-x"></i></button>
-            <ul class="navbar_menu">
-                <li><a href="#" class="navbar__menu__item--first navbar__menu__item">Nosotros</a></li>
-                <li><a href="#" class="navbar__menu__item">Área de práctica</a></li>
-                <li><a href="#" class="navbar__menu__item">Páginas</a></li>
-                <li><a href="#" class="navbar__menu__item">Blog</a></li>
-                <li><a href="#" class="navbar__menu__item">Contacto</a></li>
-                <li><a href="#" class="navbar__menu__item">Consulta gratis</a></li>
+            <button class="navbar__btn navbar__btn--close-mobile" id="close"><i class="bi bi-x"></i></button>
+            <ul class="navbar__menu">
+                <li class="navbar__item navbar__item--first"><a href="#" class="navbar__link">Nosotros</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Área de práctica</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Páginas</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Consulta gratis</a></li>
             </ul>
         </nav>
     </header>
@@ -39,37 +39,90 @@
         </section>
 
         <section class="features">
-            <div class="features__box-elements">
+            <div class="features__item">
                 <i class="bi bi-file-earmark-text"></i>
-                <p class="features__box-elements__titles">Análisis de casos</p>
-                <p class="features__box-elements__text">Mediante un diagnóstico exhaustivo, identificamos los puntos clave, los riesgos y las oportunidades, de modo que podamos diseñar una estrategia legal sólida y efectiva. Nos tomamos el tiempo necesario para comprender a fondo tus necesidades y objetivos, con el fin de brindarte el asesoramiento más acertado.</p>
+                <p class="features__title">Análisis de casos</p>
+                <p class="features__text">Mediante un diagnóstico exhaustivo, identificamos los puntos clave, los riesgos y las oportunidades, de modo que podamos diseñar una estrategia legal sólida y efectiva. Nos tomamos el tiempo necesario para comprender a fondo tus necesidades y objetivos, con el fin de brindarte el asesoramiento más acertado.</p>
             </div>
-            <div class="features__box-elements">
+            <div class="features__item">
                 <i class="bi bi-bar-chart-steps"></i>
-                <p class="features__box-elements__titles">Un paso adelante</p>
-                <p class="features__box-elements__text">Nos coordinamos estrechamente contigo para mantenerte informado sobre los avances, las decisiones a tomar y las acciones a seguir. Nuestra prioridad es lograr resultados favorables de forma ágil y eficiente, evitando demoras innecesarias y enfrentando cada obstáculo con ingenio y firmeza.</p>
+                <p class="features__title">Un paso adelante</p>
+                <p class="features__text">Nos coordinamos estrechamente contigo para mantenerte informado sobre los avances, las decisiones a tomar y las acciones a seguir. Nuestra prioridad es lograr resultados favorables de forma ágil y eficiente, evitando demoras innecesarias y enfrentando cada obstáculo con ingenio y firmeza.</p>
             </div>
-            <div class="features__box-elements">
+            <div class="features__item">
                 <i class="bi bi-file-earmark-text"></i>
-                <p class="features__box-elements__titles">Análisis de casos</p>
-                <p class="features__box-elements__text">En Justiciero Abogados & Asociados, nos enorgullece contar con un historial de éxitos rotundos. Nuestros clientes han podido obtener resoluciones judiciales satisfactorias gracias a la pericia, dedicación y tenacidad de nuestro equipo.</p>
+                <p class="features__title">Análisis de casos</p>
+                <p class="features__text">En Justiciero Abogados & Asociados, nos enorgullece contar con un historial de éxitos rotundos. Nuestros clientes han podido obtener resoluciones judiciales satisfactorias gracias a la pericia, dedicación y tenacidad de nuestro equipo.</p>
             </div>
         </section>
-        <section class="we-are">
-            <div class="we-are__text">
-                <p class="we-are__text__pretitle">Quienes somos</p>
-                <h2 class="we-are__text__title">Más que un estudio de abogados, somos defensores de la justicia</h2>
-                <p class="we-are__text__paragraph">
+        <section class="we">
+            <div class="we__text-box">
+                <p class="we__pretitle">Quienes somos</p>
+                <h2 class="we__title">Más que un estudio de abogados, somos defensores de la justicia</h2>
+                <p class="we__paragraph">
                     En Justiciero Abogados & Asociados, somos un equipo de apasionados profesionales del derecho, unidos por un objetivo común: servir de guardián de la justicia y defender con ahínco los derechos de nuestros clientes. Desde hace más de dos décadas, hemos dejado una huella imborrable en el ámbito legal, gracias a nuestra vasta experiencia, profundo conocimiento y compromiso inquebrantable.
                 </p>
-                <p class="we-are__text__paragraph">
+                <p class="we__paragraph">
                     Nuestro carácter se forja en la determinación de obtener resultados excepcionales, sin importar la complejidad de los desafíos que enfrentemos. Abogados litigantes por excelencia, nos caracterizamos por nuestra tenacidad, innovación y capacidad de adaptación, adaptando siempre nuestra estrategia a las necesidades específicas de cada caso. Juntos, conformamos un grupo de expertos que no se detiene ante obstáculos, y que está decidido a lograr la justicia que merecen nuestros clientes.
                 </p>
             </div>
-            <div class="we-are__image"></div>
+            <div class="we__image"></div>
         </section>
     </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer__column">
+                <div class="footer__title-box">
+                    <h4 class="footer__title">Sobre nosotros</h4>
+                </div>
+                <div class="footer__text">
+                    <p>Somos un equipo de apasionados profesionales del derecho, unidos por un objetivo común: servir de guardián de la justicia y defender con ahínco los derechos de nuestros clientes.</p>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title-box">
+                    <h4 class="footer__title">Servicios ofertados</h4>
+                </div>
+                <div class="footer__text">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Derechos laborales</li>
+                        <li class="footer__list-item">Violencia doméstica</li>
+                        <li class="footer__list-item">Accidentes de tránsito</li>
+                        <li class="footer__list-item">Robos y asaltos</li>
+                        <li class="footer__list-item">Paternidad y pensión de alimentos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title-box">
+                    <h4 class="footer__title">Páginas importantes</h4>
+                </div>
+                <div class="footer__text">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">Inicio</li>
+                        <li class="footer__list-item">Nosotros</li>
+                        <li class="footer__list-item">Abogados</li>
+                        <li class="footer__list-item">Servicios</li>
+                        <li class="footer__list-item">Política de servicio</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__title-box">
+                    <h4 class="footer__title">Contáctanos</h4>
+                </div>
+                <div class="footer__text">
+                    <p class="footer__paragraph">Teléfono: 777 777 776</p>
+                    <p class="footer__paragraph">E-mail: contacto@justicieros.xz</p>
+                    <p class="footer__paragraph">Dirección: Calle Interna 324, Vice Point </p>
+                </div>
+            </div>
+        </section>
+
+    </footer>
 </body>
+
 
 
 </html>

@@ -1,0 +1,29 @@
+// _base.scss
+// This contains the foundational styles, such as resets, variables, mixins, and utility classes.
+
+// COLOR PALETTE
+
+$text-dark: #00000000;
+$text-white: #ffffffff;
+
+$box-primary-1: #163451ff;
+$box-primary-2: #1a3a58ff;
+$box-primary-hovered: #16324cff;
+$box-icon: #ffffffff;
+$box-icon-hovered: #fde1c8ff;
+
+$footer-fill: #111111ff;
+$footer-title: #ffffffff;
+$footer-text: #b0b0afff;
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+$title-font: 'Lora', serif;
+$text-font: 'Lato', sans-serif;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
