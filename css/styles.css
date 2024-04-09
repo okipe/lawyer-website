@@ -5,4 +5,47 @@
   padding: 0;
 }
 
+header, header .navbar__menu, footer, main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+header, header .navbar__menu {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar__menu {
+  align-items: center;
+}
+
+.hero, .hero__box {
+  display: flex;
+}
+.hero__box {
+  flex-direction: column;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.we {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=styles.css.map */

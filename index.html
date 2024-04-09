@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justiciero Abogados</title>
     <meta name="description" content="Servicios legales de calidad con Justiciero Abogados & Asociados">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -14,18 +14,18 @@
     <header class="header" id="inicio">
         <a href="#inicio" class="header__logo"><img src="img/logo-abogado.webp" alt="Justiciero Abogados y Asociados" class="header-logo"></a>
         <!-- This allow to OPEN the Mobile Menu-->
-        <button class="header__btn header__button--open-mobile" id="open"><i class="bi bi-list"></i></button>
+        <!-- <button class="header__btn header__button--open-mobile" id="open"><i class="bi bi-list"></i></button> -->
         <!-- The visible class make navbar visible-->
         <nav class="navbar" id="navbar"> 
             <!--It allow to CLOSE the mobile menu-->
-            <button class="navbar__btn navbar__btn--close-mobile" id="close"><i class="bi bi-x"></i></button>
+            <!-- <button class="navbar__btn navbar__btn--close-mobile" id="close"><i class="bi bi-x"></i></button> -->
             <ul class="navbar__menu">
                 <li class="navbar__item navbar__item--first"><a href="#" class="navbar__link">Nosotros</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Área de práctica</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Páginas</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Consulta gratis</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link navbar__button">Consulta gratis</a></li>
             </ul>
         </nav>
     </header>
@@ -33,9 +33,12 @@
     <!-- BODY OF CONTENT -->
     <main>
         <section class="hero">
-            <p class="hero__pretitle">Eficacia y experiencia</p>
-            <h1 class="hero__title">Servicios legales de calidad</h1>
-            <p class="hero__subtitle">En Justiciero Abogados & Asociados, nos dedicamos a brindar asesoramiento legal integral con un enfoque centrado en las necesidades y los derechos de nuestros clientes.</p>
+            <div class="hero__box">
+                <p class="hero__pretitle">Eficacia y experiencia</p>
+                <h1 class="hero__title">Servicios legales de calidad</h1>
+                <p class="hero__subtitle">En Justiciero Abogados & Asociados, nos dedicamos a brindar asesoramiento legal integral con un enfoque centrado en las necesidades y los derechos de nuestros clientes.</p>
+                <button class="hero__button">Conocer más</button>
+            </div>
         </section>
 
         <section class="features">
@@ -66,60 +69,69 @@
                     Nuestro carácter se forja en la determinación de obtener resultados excepcionales, sin importar la complejidad de los desafíos que enfrentemos. Abogados litigantes por excelencia, nos caracterizamos por nuestra tenacidad, innovación y capacidad de adaptación, adaptando siempre nuestra estrategia a las necesidades específicas de cada caso. Juntos, conformamos un grupo de expertos que no se detiene ante obstáculos, y que está decidido a lograr la justicia que merecen nuestros clientes.
                 </p>
             </div>
-            <div class="we__image"></div>
+            <div class="we__image">
+                <img src="./img/about1.jpg" alt="Abogado de Justiciero">
+            </div>
+        </section>
+        <section class="touch">
+            <div class="touch__container">
+                <h4 class="touch__title">Estemos en contacto</h4>
+                <p class="touch__text">Conoce nuestras ofertas y artículos útiles en nuestro Newsletter gratuito.</p>
+                <div class="touch__mini-container">
+                    <input type="text" class="touch__email" id="tName" name="tEmail" placeholder="Ingrese su e-mail">
+                    <button type="submit" class="touch__button">Suscribirse</button>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section class="footer">
-            <div class="footer__column">
-                <div class="footer__title-box">
-                    <h4 class="footer__title">Sobre nosotros</h4>
-                </div>
-                <div class="footer__text">
-                    <p>Somos un equipo de apasionados profesionales del derecho, unidos por un objetivo común: servir de guardián de la justicia y defender con ahínco los derechos de nuestros clientes.</p>
-                </div>
+        <div class="footer__column">
+            <div class="footer__title-box">
+                <h4 class="footer__title">Sobre nosotros</h4>
             </div>
-            <div class="footer__column">
-                <div class="footer__title-box">
-                    <h4 class="footer__title">Servicios ofertados</h4>
-                </div>
-                <div class="footer__text">
-                    <ul class="footer__list">
-                        <li class="footer__list-item">Derechos laborales</li>
-                        <li class="footer__list-item">Violencia doméstica</li>
-                        <li class="footer__list-item">Accidentes de tránsito</li>
-                        <li class="footer__list-item">Robos y asaltos</li>
-                        <li class="footer__list-item">Paternidad y pensión de alimentos</li>
-                    </ul>
-                </div>
+            <div class="footer__text">
+                <p>Somos un equipo de apasionados profesionales del derecho, unidos por un objetivo común: servir de guardián de la justicia y defender con ahínco los derechos de nuestros clientes.</p>
             </div>
-            <div class="footer__column">
-                <div class="footer__title-box">
-                    <h4 class="footer__title">Páginas importantes</h4>
-                </div>
-                <div class="footer__text">
-                    <ul class="footer__list">
-                        <li class="footer__list-item">Inicio</li>
-                        <li class="footer__list-item">Nosotros</li>
-                        <li class="footer__list-item">Abogados</li>
-                        <li class="footer__list-item">Servicios</li>
-                        <li class="footer__list-item">Política de servicio</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__title-box">
+                <h4 class="footer__title">Servicios ofertados</h4>
             </div>
-            <div class="footer__column">
-                <div class="footer__title-box">
-                    <h4 class="footer__title">Contáctanos</h4>
-                </div>
-                <div class="footer__text">
-                    <p class="footer__paragraph">Teléfono: 777 777 776</p>
-                    <p class="footer__paragraph">E-mail: contacto@justicieros.xz</p>
-                    <p class="footer__paragraph">Dirección: Calle Interna 324, Vice Point </p>
-                </div>
+            <div class="footer__text">
+                <ul class="footer__list">
+                    <li class="footer__list-item">Derechos laborales</li>
+                    <li class="footer__list-item">Violencia doméstica</li>
+                    <li class="footer__list-item">Accidentes de tránsito</li>
+                    <li class="footer__list-item">Robos y asaltos</li>
+                    <li class="footer__list-item">Paternidad y pensión de alimentos</li>
+                </ul>
             </div>
-        </section>
-
+        </div>
+        <div class="footer__column">
+            <div class="footer__title-box">
+                <h4 class="footer__title">Páginas importantes</h4>
+            </div>
+            <div class="footer__text">
+                <ul class="footer__list">
+                    <li class="footer__list-item">Inicio</li>
+                    <li class="footer__list-item">Nosotros</li>
+                    <li class="footer__list-item">Abogados</li>
+                    <li class="footer__list-item">Servicios</li>
+                    <li class="footer__list-item">Política de servicio</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__title-box">
+                <h4 class="footer__title">Contáctanos</h4>
+            </div>
+            <div class="footer__text">
+                <p class="footer__paragraph">Teléfono: 777 777 776</p>
+                <p class="footer__paragraph">E-mail: contacto@justicieros.xz</p>
+                <p class="footer__paragraph">Dirección: Calle Interna 324, Vice Point </p>
+            </div>
+        </div>
     </footer>
 </body>
 
